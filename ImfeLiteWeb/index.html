@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Invoice Manager (Lite) for Excel</title>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.4.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.4.0/fabric.components.min.css">
+    <!-- To enable the offline use of Office UI Fabric, use: -->
+    <!--<link rel="stylesheet" href="content/fabric.min.css">
+    <link rel="stylesheet" href="Content/fabric.components.min.css">-->
+
+
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="pivot.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+
+</head>
+<body class="ms-navigation-pivot">
+
+    <main id="excel2013" class="undisplayed ms-font-m-plus" style="padding:10px;">
+        <br /><br />
+        <p><strong>Invoice Manager (Lite) for Excel</strong> requires Office 365, Excel 2016 or higher versions.</p>
+        <br />
+        <p>Click the following link to visit <strong>Invoice Manager for Excel</strong>, which works with earlier versions of Excel on Windows desktop.</p>
+        <br />
+        <p><a target="_blank" href="https://www.invoicingtemplate.com/software.html">Invoice Manager for Excel ...</a></p>
+        <br /><br />
+    </main>
+
+    <main id="excel2016">
+        <ul class="ms-navigation-pivot__header ms-Pivot">
+            <li id="pivot1" class="ms-navigation-pivot__link ms-Pivot-link is-selected" data-pivotContent="[data-demo='tabs']>.feature1"><i class="ms-Icon ms-Icon--circleEmpty ms-fontColor-themePrimary" aria-hidden="true"></i>&nbsp;Quick Start</li>
+            <li id="pivot2" class="ms-navigation-pivot__link ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature2"><i class="ms-Icon ms-Icon--star ms-fontColor-themePrimary" aria-hidden="true"></i>&nbsp;Commands</li>
+            <li id="pivot3" class="ms-navigation-pivot__link ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature3"><i class="ms-Icon ms-Icon--infoCircle ms-fontColor-themePrimary" aria-hidden="true"></i>&nbsp;About</li>
+        </ul>
+        <div data-demo="tabs">
+            <div class="ms-navigation-pivot__content ms-Pivot-content is-selected feature1">
+
+                <div class="ms-firstrun-instructionstep">
+                    <div class="ms-firstrun-instructionstep__welcome-body">
+                        <ul class="ms-List ms-firstrun-instructionstep__list ms-fontColor-neutralPrimary">
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">1</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Open the sample template </span>
+                                    <span>from OneDrive.</span>
+                                    <br /><a href="https://1drv.ms/x/s!AmBOMBatvDH8d7w16_PN8iAdZy4" style="display:block;padding-top:10px" target="_blank">Invoice Template</a>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">2</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Make it editable </span>
+                                    <span>by saving it to your own OneDrive, or download and then open it with Excel for desktop.</span>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">3</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Customize </span><span> it by entering your business name and address etc.</span>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">4</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Get it ready </span><span> by clicking the &quot;Clear & New&quot; button on the <a href="#" id="gotoCommands">Commands</a> tab on this task pane.</span>
+                                <!--(Make sure the &quot;Invoice&quot; worksheet is active before clicking the button.)--></span>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">5</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Fill in invoice data.</span>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">6</span>
+                                <span class="ms-ListItem-secondaryText">
+                                    <span class="ms-fontWeight-semibold">Print or save </span><span>with the commands on Excel &quot;File&quot; menu.</span>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="ms-font-m">Need a different invoice template? Visit <a href="https://invoicingtemplate.com/" target="_blank">InvoicingTemplate.com</a> to choose from our 400+ ready-to-use formats. </p>
+
+            </div>
+
+            <div class="ms-navigation-pivot__content ms-Pivot-content feature2 ms-font-m ms-fontColor-neutralPrimary">
+
+                <div class="ms-firstrun-trial-feature__login-panel">
+
+                    <div class="ms-firstrun-trial-feature__input">
+                        <button class="ms-Button ms-Button--primary" id="btnClearNew">
+                            <!--<span class="ms-Button-icon"><i class="ms-Icon ms-Icon--play"></i></span>-->
+                            <span class="ms-Button-label" id="button-text">Clear &amp; New</span>
+                            <span class="ms-Button-description" id="button-desc"></span>
+                        </button>
+                    </div>
+
+                    <div class="ms-firstrun-trial-feature__input ms-Toggle">
+                        <span class="ms-Toggle-description ms-font-m">Fill in invoice#</span>
+                        <input type="checkbox" id="toggleInvoiceID" name="toggleInvoiceID" class="ms-Toggle-input">
+                        <label for="toggleInvoiceID" class="ms-Toggle-field">
+                            <span class="ms-Label ms-Label--off">Off</span>
+                            <span class="ms-Label ms-Label--on">On</span>
+                        </label>
+                    </div>
+
+                    <div class="ms-firstrun-trial-feature__input ms-Toggle">
+                        <span class="ms-Toggle-description ms-font-m">Fill invoice date</span>
+                        <input type="checkbox" id="toggleInvoiceDate" name="toggleInvoiceDate" class="ms-Toggle-input">
+                        <label for="toggleInvoiceDate" class="ms-Toggle-field">
+                            <span class="ms-Label ms-Label--off">Off</span>
+                            <span class="ms-Label ms-Label--on">On</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="ms-firstrun-trial-feature__login-panel">
+                    <p class="ms-firstrun-trial-feature__input ms-font-l ms-fontColor-themePrimary">Invoice# options</p>
+
+                    <p class="ms-firstrun-trial-feature__input ">
+                        <label for="nextInvoiceID">Next Invoice#</label>
+                        <!--class="input__username"-->
+                        <input type="text" name="nextInvoiceID" id="nextInvoiceID" />
+                        <br /><span id="nextInvoiceIDErr" class="undisplayed ms-notification-inline-message__span ms-fontColor-error ms-font-s ms-bgColor-error"><i class="ms-Icon ms-Icon--exclamation"></i>Must be non-zero integer</span>
+                    </p>
+                    <p class="ms-firstrun-trial-feature__input ms-notification-inline-message__input">
+                        <label for="numberOfDigitsInInvoiceID">Number of digits in invoice#</label>
+                        <!--class="input__password"-->
+                        <input type="text" name="numberOfDigitsInInvoiceID" id="numberOfDigitsInInvoiceID" />
+                        <br /><span id="numberOfDigitsInInvoiceIDErr" class="undisplayed ms-notification-inline-message__span ms-fontColor-error ms-font-s ms-bgColor-error"><i class="ms-Icon ms-Icon--exclamation"></i>Must be integer between 1~9</span>
+
+                    </p>
+                    <p class="ms-firstrun-trial-feature__input ">
+                        <label for="invoiceIDPrefix">Invoice# prefix</label>
+                        <!--class="input__password"-->
+                        <input type="text" name="invoiceIDPrefix" id="invoiceIDPrefix" />
+                        <br /><span id="invoiceIDPrefixErr" class="undisplayed ms-notification-inline-message__span ms-fontColor-error ms-font-s ms-bgColor-error"><i class="ms-Icon ms-Icon--exclamation"></i>Must be integer between 1~9</span>
+                    </p>
+                    <div class="padding"></div>
+                </div>
+
+                <div class="ms-firstrun-trial-feature__login-panel">
+                    <p class="ms-firstrun-trial-feature__input ms-font-l ms-fontColor-themePrimary">Auto-open add-in</p>
+                    <p class="ms-firstrun-trial-feature__input">
+                        <label>After you set auto-open to on, save the template and reopent it, it should open Invoice Manager (Lite) automatically</label>
+                    </p>
+                    <div class="ms-firstrun-trial-feature__input ms-Toggle">
+                        <input type="checkbox" id="toggleAutoOpen" name="toggleAutoOpen" class="ms-Toggle-input">
+                        <label for="toggleAutoOpen" class="ms-Toggle-field">
+                            <span class="ms-Label ms-Label--off">Off</span>
+                            <span class="ms-Label ms-Label--on">On</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ms-navigation-pivot__content ms-Pivot-content feature3">
+
+
+
+                <div class="ms-firstrun-instructionstep">
+                    <h2>Invoice Manager (Lite)</h2>
+                    <p class="ms-font-s">Version: 1.1.1.1</p>
+                    <div class="ms-firstrun-instructionstep__welcome-body">
+                        <p class="ms-fontWeight-semilight" style="padding-top:15px;padding-bottom:15px;">Invoice Manager (Lite) helps you to create invoices easily with more than 400 free Excel invoice templates.</p>
+                        <ul class="ms-List ms-firstrun-instructionstep__list ms-fontColor-neutralPrimary">
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">&diams;</span>
+                                <span class="ms-ListItem-secondaryText">Click the &quot;Clear &amp; New&quot; button to clear the template so that it is ready for your next new invoice.</span>
+                            </li>
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">&diams;</span>
+                                <span class="ms-ListItem-secondaryText">Fill invoice date automatically (optional).</span>
+                            </li>
+                            <li class="ms-ListItem">
+                                <span class="ms-ListItem-primaryText">&diams;</span>
+                                <span class="ms-ListItem-secondaryText">Automatic invoice numbering (optional).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="ms-fontWeight-semilight" style="padding-top:15px;padding-bottom:15px;">All the settings are stored in the Excel template itself. This means:</p>
+
+                    <ul class="ms-List ms-firstrun-instructionstep__list ms-fontColor-neutralPrimary">
+                        <li class="ms-ListItem">
+                            <span class="ms-ListItem-primaryText">&diams;</span>
+                            <span class="ms-ListItem-secondaryText">Each template could have its own settings that differ from the settings of other templates, including the automated invoice numbering.</span>
+                        </li>
+                        <li class="ms-ListItem">
+                            <span class="ms-ListItem-primaryText">&diams;</span>
+                            <span class="ms-ListItem-secondaryText">If a template is opened with Excel for Windows desktop, you have to save the template in order to persist the settings; If a template is opened with Excel for Office 365, by default the workbook file is saved automatically unless you turn &quot;Auto Save&quot; off.</span>
+                        </li>
+                    </ul>
+                </div>
+                            
+                    </div>
+
+                </div>
+
+                <div class="ms-MessageBanner" id="notification-popup">
+                    <div class="ms-MessageBanner-content">
+                        <div class="ms-MessageBanner-text">
+                            <div class="ms-MessageBanner-clipper">
+                                <div class="ms-font-m-plus ms-fontWeight-semibold" id="notification-header"></div>
+                                <div class="ms-font-m ms-fontWeight-semilight" id="notification-body"></div>
+                            </div>
+                        </div>
+                        <button class="ms-MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+                        <div class="ms-MessageBanner-action"></div>
+                    </div>
+                    <button class="ms-MessageBanner-close"> <i class="ms-Icon ms-Icon--x"></i> </button>
+                </div>
+
+</main>
+
+    <footer class="ms-settings-privacy__footer  ms-bgColor-themePrimary">
+        <div class="ms-settings-privacy__footer--left">
+            <img src="images/lite32.png" />
+            
+                <h1 class="ms-font-l ms-fontWeight-semilight">
+                    <a href="https://invoicingtemplate.com/" class="ms-fontColor-white" target="_blank">
+                        InvoicingTemplate.com
+                    </a>
+            </h1>
+
+        </div>
+        <!--<div class="ms-settings-privacy__footer--right">
+            <i class="ms-Icon ms-Icon--gear ms-fontColor-white"></i>
+        </div>-->
+    </footer>
+
+</body>
+</html>

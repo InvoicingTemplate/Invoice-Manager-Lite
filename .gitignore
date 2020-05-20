@@ -23,6 +23,7 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+[Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
@@ -60,6 +61,9 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
 
 # StyleCop
 StyleCopReport.xml
@@ -136,6 +140,9 @@ _TeamCity*
 # AxoCover is a Code Coverage Tool
 .axoCover/*
 !.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*[.json, .xml, .info]
 
 # Visual Studio code coverage results
 *.coverage
@@ -348,3 +355,64 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
+
+
+# .gitignore for Windows:
+# https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+
+#-----------------------
+*.zip
+*.rar
+*.exe
+pagehelper/PageHelper/.git/
+
+ImfeLite/bin/
+SharePointProjectItem.spdata
+ImfeLite/My Project/
+ImfeLite/obj/
+ImfeLite/pkg/
+ImfeLite/pkgobj/
+*.xlsx
+*.mdb
+ImfeLiteWeb/bin/
+ImfeLiteWeb/obj/
+ImfeLiteWeb/SharePointTaskPaneAddInWebFormItem/
+lite-screenshots/
+ms/
+packages/
+for-publish-to-ms-store-manifest-file-location.txt
+imfe-lite-doc.docx
+readme.txt
+Script-Lab--a-Microsoft-Garage-project.xlsx
+Wef*.lnk
