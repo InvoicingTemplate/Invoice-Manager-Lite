@@ -403,7 +403,13 @@ ImfeLite/My Project/
 ImfeLite/obj/
 ImfeLite/pkg/
 ImfeLite/pkgobj/
-*.xlsx
+Script-Lab--a-Microsoft-Garage-project.xlsx
+
+ImfeLite/job.xlsx
+ImfeLite/job0.xlsx
+ImfeLite/job2.xlsx
+ImfeLite/job3.xlsx
+
 *.mdb
 ImfeLiteWeb/bin/
 ImfeLiteWeb/obj/
